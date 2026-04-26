@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Avani Victoria Falls Resort</title>
+    <script>
+      // SPA shim: stash the requested path so main.jsx can rehydrate the router.
+      try {
+        sessionStorage.setItem(
+          'avani:spa-redirect',
+          window.location.pathname + window.location.search + window.location.hash
+        );
+      } catch (e) {}
+      window.location.replace('/');
+    </script>
+    <meta http-equiv="refresh" content="0; url=/" />
+  </head>
+  <body>
+    <p>Redirecting…</p>
+  </body>
+</html>
